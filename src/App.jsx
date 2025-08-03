@@ -1,5 +1,8 @@
 import React from 'react';
 import { Container, Box, Typography, Card, CardContent, Avatar, Button, Grid } from '@mui/material';
+import TitleImg from '../public/Title.jpeg';
+import OpportImg from '../public/opport.png';
+import TechImg from '../public/Tech.png';
 
 // Main App component
 const App = () => {
@@ -33,7 +36,7 @@ const App = () => {
     <Box sx={{ bgcolor: '#f5f6fa', minHeight: '100vh', fontFamily: 'Inter, sans-serif' }}>
       {/* Hero Section */}
       <Box sx={{ position: 'relative', width: '100%', maxWidth: 900, mx: 'auto', height: { xs: 340, md: 440 }, display: 'flex', alignItems: 'center', justifyContent: 'flex-end', textAlign: 'left', mb: 4, overflow: 'hidden', borderRadius: 4, boxShadow: 4 }}>
-        <img src="/Title.jpeg" alt="Career Crossroads Book Cover" style={{ position: 'absolute', left: 0, top: 0, width: '35%', height: '100%', objectFit: 'cover', zIndex: 1, opacity: 0.45, borderRadius: 4 }} />
+        <img src={TitleImg} alt="Career Crossroads Book Cover" style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 1, opacity: 0.45, borderRadius: 4 }} />
         {/* Gradient overlay for left side */}
         <Box sx={{ position: 'absolute', left: 0, top: 0, width: '60%', height: '100%', zIndex: 2, background: 'linear-gradient(90deg, rgba(34,34,34,0.5) 0%, rgba(255,255,255,0) 100%)', borderRadius: 4 }} />
         {/* Text content on right side */}
@@ -71,7 +74,7 @@ const App = () => {
           </CardContent>
         </Card>
         <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
-          <img src="/opport.png" alt="Opportunities" style={{ width: 220, height: 220, objectFit: 'contain', borderRadius: 16, boxShadow: '0 4px 24px #6366f133' }} />
+          <img src={OpportImg} alt="Opportunities" style={{ width: 220, height: 220, objectFit: 'contain', borderRadius: 16, boxShadow: '0 4px 24px #6366f133' }} />
         </Box>
 
         {/* Courses after 10th Section */}
@@ -99,7 +102,7 @@ const App = () => {
               Career Opportunities
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img src="/Tech.png" alt="Career Opportunities" style={{ width: '100%', maxWidth: 600, height: 'auto', borderRadius: 16, boxShadow: '0 4px 24px #6366f133', border: '4px solid #e0e7ff' }} />
+              <img src={TechImg} alt="Career Opportunities" style={{ width: '100%', maxWidth: 600, height: 'auto', borderRadius: 16, boxShadow: '0 4px 24px #6366f133', border: '4px solid #e0e7ff' }} />
             </Box>
           </CardContent>
         </Card>
